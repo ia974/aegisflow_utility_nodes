@@ -227,8 +227,8 @@ app.registerExtension({
                                     if (Object.keys(app.canvas.selected_nodes || {}).length) {
                                         clearInterval(intervalId);
                                         var group = new LiteGraph.LGraphGroup();
-                                        group.title = option.content + "_" + randomString(3);
-                                        group.color = "#454545";
+                                        group.title = option.content;
+                                        group.color = "#3f789e";
                                         addNodesToGroup(group, app.canvas.selected_nodes)
                                         app.canvas.graph.add(group);
                                         app.canvas.graph.change();
